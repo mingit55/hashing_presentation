@@ -1,0 +1,306 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Arita;
+    font-weight: 300;
+    src: url(/fonts/arita300.ttf) format('truetype');
+}
+@font-face {
+    font-family: Arita;
+    font-weight: 900;
+    src: url(/fonts/artia900.ttf) format('truetype');
+}
+@font-face {
+    font-family: Noto;
+    font-weight: 300;
+    src: url(/fonts/noto300.otf);
+}
+@font-face {
+    font-family: Noto;
+    font-weight: 900;
+    src: url(/fonts/noto900.otf);
+}
+
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Noto', sans-serif;
+    font-size: 15px;
+    color: rgb(247, 245, 245);
+}
+
+ol, ul { list-style: none; }
+a, a:hover { text-decoration: none; }
+
+#wrap {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+}
+
+.container {
+    min-width: 1440px;
+    height: 670px;
+    margin: 10px auto;
+}
+
+.row { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.row.around {
+    justify-content: space-around;
+}
+
+.row.between {
+    justify-content: space-between;
+}
+
+.column { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.column.left-align {
+    align-items: flex-start;
+}
+
+.column.right-align {
+    align-items: flex-end;
+}
+
+
+.box-center {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.point-1 { color: rgb(28, 221, 228); font-weight: 900;}
+.point-2 { color: rgb(28, 228, 118); font-weight: 900;}
+
+[class|="fade-no"] { opacity: 0; }
+
+/* Margin */
+.mt-1 { margin-top: 10px; }
+.mt-2 { margin-top: 20px; }
+.mt-3 { margin-top: 30px; }
+.mt-4 { margin-top: 40px; }
+.mt-5 { margin-top: 50px; }
+
+.ml-1 { margin-left: 10px; }
+.ml-2 { margin-left: 20px; }
+.ml-3 { margin-left: 30px; }
+.ml-4 { margin-left: 40px; }
+.ml-5 { margin-left: 50px; }
+
+.mb-1 { margin-bottom: 10px; }
+.mb-2 { margin-bottom: 20px; }
+.mb-3 { margin-bottom: 30px; }
+.mb-4 { margin-bottom: 40px; }
+.mb-5 { margin-bottom: 50px; }
+
+.mr-1 { margin-right: 10px; }
+.mr-2 { margin-right: 20px; }
+.mr-3 { margin-right: 30px; }
+.mr-4 { margin-right: 40px; }
+.mr-5 { margin-right: 50px; }
+
+
+/* Padding */
+.pt-1 { padding-top: 10px; }
+.pt-2 { padding-top: 20px; }
+.pt-3 { padding-top: 30px; }
+.pt-4 { padding-top: 40px; }
+.pt-5 { padding-top: 50px; }
+
+.pl-1 { padding-left: 10px; }
+.pl-2 { padding-left: 20px; }
+.pl-3 { padding-left: 30px; }
+.pl-4 { padding-left: 40px; }
+.pl-5 { padding-left: 50px; }
+
+.pb-1 { padding-bottom: 10px; }
+.pb-2 { padding-bottom: 20px; }
+.pb-3 { padding-bottom: 30px; }
+.pb-4 { padding-bottom: 40px; }
+.pb-5 { padding-bottom: 50px; }
+
+.pr-1 { padding-right: 10px; }
+.pr-2 { padding-right: 20px; }
+.pr-3 { padding-right: 30px; }
+.pr-4 { padding-right: 40px; }
+.pr-5 { padding-right: 50px; }
+
+/* Width */
+.w-100 { width: 100%; }
+.w-75 { width: 75%; }
+.w-50 { width: 50%; }
+.w-25 { width: 25%; }
+
+/* font-size */
+
+.font-1 { font-size: 1rem!important; }
+.font-1-1 { font-size: 1.1rem!important; }
+.font-1-2 { font-size: 1.2rem!important; }
+.font-1-3 { font-size: 1.3rem!important; }
+.font-1-4 { font-size: 1.4rem!important; }
+.font-1-5 { font-size: 1.5rem!important; }
+.font-1-6 { font-size: 1.6rem!important; }
+.font-1-7 { font-size: 1.7rem!important; }
+.font-1-8 { font-size: 1.8rem!important; }
+.font-1-9 { font-size: 1.9rem!important; }
+
+.font-2 { font-size: 2rem!important; }
+.font-2-5 { font-size: 2.5rem!important; }
+.font-3 { font-size: 3rem!important; }
+.font-4 { font-size: 4rem!important; }
+.font-5 { font-size: 5rem!important; }
+
+
+/* Title */
+.main-title {
+    color: #fff;
+}
+
+.sub-title {
+    color: #fff;
+}
+
+.slide-title {
+    position: absolute;
+    top: -100px; left: 0;
+    font-size: 2.8em;
+    padding: 20px;
+    background-color: rgb(1, 167, 117);
+    font-family: "Arita", sans-serif;
+}
+
+p.description {
+    position: absolute;
+    top: -10px; left: 20px;
+    color: rgb(194, 194, 194);
+    font-size: 1.5em;
+}
+
+/* Control-Panel */
+
+#control-panel {
+    position: absolute;
+    left: 10px; bottom: 10px;
+    width: 170px; height: 50px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+#control-panel button {
+    display: block;
+    width: 50px; height: 50px;
+    border: none;
+    background-color: rgba( 255, 255, 255, 0.9);
+    color: rgb(41, 41, 41);
+    font-size: 1.5em;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+#control-panel span {
+    display: block;
+    width: 60px; height: 50px;
+    border: none;
+    background-color: rgba(57, 158, 189, 0.863);
+    color: rgb(245, 243, 243);
+    font-size: 1.5em;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* Data */
+
+.data {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background-color: rgb(60, 126, 226);
+    font-size: 2em;
+    transition: left 0.5s, top 0.5s;
+    font-weight: bold;
+} 
+
+#data-box {
+    width: 560px;
+    height: 120px;
+    background-color: rgb(50, 74, 114);
+}
+
+/* Function Box */
+
+#function-box {
+    width: 1000px;
+    height: 350px;
+    background-image: url(/images/FunctionBox.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+#function-box p {
+    color: rgb(53, 53, 53);
+    font-size: 2.2em;
+    margin-bottom: 50px;
+}
+
+
+/* hash-box */
+#hash-table {
+    width: 230px;
+    height: calc(100px * 6 + 10px * 7);
+    background-color: rgb(196, 212, 247);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+
+    transition: all 500ms;
+}
+
+h3.title {
+    font-size: 2em;
+}
+
+#hash-table h3 {
+    position: absolute;
+    top: -70px; left: 50%;
+    transform: translateX(-32%);
+    width: 500px;
+}
+
+#hash-table .table-bucket {
+    color: rgb(43, 43, 46);
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px 10px 0;
+    font-size: 2em;
+    font-weight: 900;
+}

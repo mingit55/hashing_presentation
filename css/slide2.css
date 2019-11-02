@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.swrap2 .box-center {
+    width: 100%;
+}
+
+.swrap2 h3 {
+    font-size: 5em;
+    margin-bottom: 10px;
+    font-family: "Arita", sans-serif;
+}
+
+.swrap2 p {
+    MARGIN-TOP: 50px;
+    width: 100%;
+    font-size: 2em;
+    line-height: 1.5em;
+    font-family: "Arita", sans-serif;
+}

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.swrap5 h3 {
+    font-family: "Arita", sans-serif;
+    font-size: 2.5em;
+    color: rgb(124, 240, 255)
+}
+
+.swrap5 p {
+    font-family: "Arita", sans-serif;
+    font-size: 2em;
+    line-height: 2em;
+}
